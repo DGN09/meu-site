@@ -1,13 +1,14 @@
 # Borealis Engenharia
 
-Site institucional para uma empresa de engenharia, construído com HTML, CSS e
+Site institucional para uma empresa de engenharia elétrica voltada a energias
+renováveis (solar, eólica e armazenamento), construído com HTML, CSS e
 JavaScript puros (sem frameworks). Seções: Início, Quem Somos, Serviços,
 Portfólio de Projetos e Contato.
 
 ## Estrutura
 
 - `index.html` — estrutura da página (hero, quem somos, serviços, projetos, contato)
-- `style.css` — identidade visual "blueprint" (azul técnico + laranja de segurança), tema claro/escuro e responsividade
+- `style.css` — identidade visual azul técnico + ciano (inspirada na aurora boreal), tema claro/escuro e responsividade
 - `script.js` — alternância de tema, menu mobile, animações ao rolar, contador animado nos números e formulário de contato
 
 ## Como usar

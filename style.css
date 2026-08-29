@@ -4,7 +4,7 @@
   --text: #12202e;
   --text-muted: #55677a;
   --primary: #123a5c;
-  --accent: #e8590c;
+  --accent: #0e7490;
   --border: #d6dee6;
   --shadow: 0 8px 24px rgba(18, 32, 46, 0.08);
 }
@@ -16,7 +16,7 @@
     --text: #e7ecf2;
     --text-muted: #93a2b4;
     --primary: #6fa8dc;
-    --accent: #ff7a33;
+    --accent: #22d3ee;
     --border: #223448;
     --shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
   }
@@ -28,7 +28,7 @@
   --text: #e7ecf2;
   --text-muted: #93a2b4;
   --primary: #6fa8dc;
-  --accent: #ff7a33;
+  --accent: #22d3ee;
   --border: #223448;
   --shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
 }
@@ -469,7 +469,7 @@ a:focus-visible {
 
 .status-progress {
   color: var(--accent);
-  background: rgba(232, 89, 12, 0.12);
+  background: rgba(6, 182, 212, 0.15);
 }
 
 .project-meta {
