@@ -3,16 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meu Portfólio</title>
+  <title>Vetor Engenharia</title>
+  <meta name="description" content="Vetor Engenharia — projetos estruturais, consultoria técnica e gestão de obras." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="header">
     <nav class="navbar">
-      <a href="#" class="logo">Seu Nome</a>
+      <a href="#inicio" class="logo">
+        <svg class="logo-mark" width="26" height="26" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M3 25 L25 25 L25 3 Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+          <line x1="3" y1="25" x2="25" y2="3" stroke="currentColor" stroke-width="2" />
+          <circle cx="19" cy="19" r="1.7" fill="currentColor" />
+        </svg>
+        <span>Vetor <strong>Engenharia</strong></span>
+      </a>
       <ul class="nav-links">
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#quem-somos">Quem Somos</a></li>
+        <li><a href="#servicos">Serviços</a></li>
         <li><a href="#projetos">Projetos</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
@@ -24,81 +36,211 @@
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Olá, eu sou <span class="highlight">Seu Nome</span></h1>
-        <p class="subtitle">Desenvolvedor(a) apaixonado(a) por criar experiências digitais simples e eficientes.</p>
+    <section id="inicio" class="hero">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-content corner-frame">
+        <p class="eyebrow">Engenharia Estrutural &amp; Consultoria Técnica</p>
+        <h1>Engenharia de precisão, do cálculo à obra.</h1>
+        <p class="subtitle">
+          Unimos cálculo estrutural rigoroso e gestão de projetos para entregar
+          obras seguras, dentro do prazo e do orçamento.
+        </p>
         <div class="hero-buttons">
           <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
-          <a href="#contato" class="btn btn-secondary">Fale Comigo</a>
+          <a href="#contato" class="btn btn-secondary">Fale com a Equipe</a>
         </div>
       </div>
     </section>
 
-    <section id="sobre" class="section fade-in">
-      <h2 class="section-title">Sobre Mim</h2>
-      <div class="about-content">
-        <p>
-          Sou um(a) desenvolvedor(a) em constante aprendizado, com interesse em
-          construir projetos que resolvam problemas reais. Gosto de explorar novas
-          tecnologias e compartilhar conhecimento pelo caminho.
-        </p>
+    <section id="quem-somos" class="section fade-in">
+      <p class="section-tag">01 — Quem Somos</p>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title">Cálculo rigoroso, comunicação clara.</h2>
+          <p>
+            A Vetor Engenharia nasceu da união entre engenheiros estruturais e
+            gestores de obra que acreditam que todo projeto de qualidade começa
+            com cálculo rigoroso e comunicação transparente com o cliente.
+          </p>
+          <p>
+            Atuamos do estudo de viabilidade à entrega da obra, sempre com foco
+            em segurança, eficiência estrutural e cumprimento de prazos.
+          </p>
+          <ul class="values-list">
+            <li><strong>Precisão técnica</strong> — cada projeto é revisado e validado antes de seguir para execução.</li>
+            <li><strong>Segurança em primeiro lugar</strong> — margens de segurança nunca são sacrificadas por prazo ou custo.</li>
+            <li><strong>Compromisso com prazos</strong> — cronograma físico-financeiro acompanhado semana a semana.</li>
+          </ul>
+        </div>
+        <dl class="stats-grid">
+          <div class="stat-card corner-frame">
+            <dt>Anos de atuação</dt>
+            <dd><span class="stat-number" data-count="18">0</span></dd>
+          </div>
+          <div class="stat-card corner-frame">
+            <dt>Projetos entregues</dt>
+            <dd><span class="stat-number" data-count="126">0</span>+</dd>
+          </div>
+          <div class="stat-card corner-frame">
+            <dt>Engenheiros na equipe</dt>
+            <dd><span class="stat-number" data-count="14">0</span></dd>
+          </div>
+          <div class="stat-card corner-frame">
+            <dt>Estados atendidos</dt>
+            <dd><span class="stat-number" data-count="6">0</span></dd>
+          </div>
+        </dl>
       </div>
     </section>
 
-    <section id="habilidades" class="section fade-in">
-      <h2 class="section-title">Habilidades</h2>
-      <div class="skills-grid">
-        <div class="skill-card">HTML5</div>
-        <div class="skill-card">CSS3</div>
-        <div class="skill-card">JavaScript</div>
-        <div class="skill-card">Git &amp; GitHub</div>
-        <div class="skill-card">Responsividade</div>
-        <div class="skill-card">UI/UX</div>
+    <section id="servicos" class="section fade-in">
+      <p class="section-tag">02 — Serviços</p>
+      <h2 class="section-title">O que fazemos</h2>
+      <div class="services-grid">
+        <article class="service-card">
+          <span class="sheet-tag">FL-01</span>
+          <h3>Projetos Estruturais</h3>
+          <p>Cálculo e detalhamento estrutural em concreto armado, aço e madeira, com foco em segurança e economia de material.</p>
+        </article>
+        <article class="service-card">
+          <span class="sheet-tag">FL-02</span>
+          <h3>Consultoria Técnica</h3>
+          <p>Laudos, pareceres técnicos e due diligence estrutural para aquisição ou reforma de imóveis.</p>
+        </article>
+        <article class="service-card">
+          <span class="sheet-tag">FL-03</span>
+          <h3>Gestão de Obras</h3>
+          <p>Acompanhamento de execução, cronograma físico-financeiro e controle de qualidade em campo.</p>
+        </article>
+        <article class="service-card">
+          <span class="sheet-tag">FL-04</span>
+          <h3>Reforço Estrutural</h3>
+          <p>Diagnóstico de patologias e projetos de reforço para edificações existentes.</p>
+        </article>
+        <article class="service-card">
+          <span class="sheet-tag">FL-05</span>
+          <h3>Projetos Industriais</h3>
+          <p>Estruturas metálicas e galpões industriais dimensionados para alta demanda operacional.</p>
+        </article>
+        <article class="service-card">
+          <span class="sheet-tag">FL-06</span>
+          <h3>Vistorias e Perícias</h3>
+          <p>Inspeção predial, laudos periciais e avaliação de conformidade com normas técnicas.</p>
+        </article>
       </div>
     </section>
 
     <section id="projetos" class="section fade-in">
-      <h2 class="section-title">Projetos</h2>
+      <p class="section-tag">03 — Projetos</p>
+      <h2 class="section-title">Portfólio</h2>
       <div class="projects-grid">
         <article class="project-card">
-          <h3>Projeto Um</h3>
-          <p>Uma breve descrição do projeto e das tecnologias utilizadas.</p>
-          <a href="#" class="project-link">Ver mais →</a>
+          <div class="project-head">
+            <span class="sheet-tag">Nº 2024-014</span>
+            <span class="status status-done">Concluído</span>
+          </div>
+          <h3>Edifício Aurora</h3>
+          <p>Estrutura em concreto armado de 18 pavimentos, com otimização de lajes que reduziu 12% do consumo de aço.</p>
+          <dl class="project-meta">
+            <div><dt>Categoria</dt><dd>Residencial</dd></div>
+            <div><dt>Ano</dt><dd>2024</dd></div>
+          </dl>
         </article>
         <article class="project-card">
-          <h3>Projeto Dois</h3>
-          <p>Uma breve descrição do projeto e das tecnologias utilizadas.</p>
-          <a href="#" class="project-link">Ver mais →</a>
+          <div class="project-head">
+            <span class="sheet-tag">Nº 2023-009</span>
+            <span class="status status-done">Concluído</span>
+          </div>
+          <h3>Galpão Logístico Norte</h3>
+          <p>Estrutura metálica de 8.000 m² para centro de distribuição, com vão livre de 30 metros.</p>
+          <dl class="project-meta">
+            <div><dt>Categoria</dt><dd>Industrial</dd></div>
+            <div><dt>Ano</dt><dd>2023</dd></div>
+          </dl>
         </article>
         <article class="project-card">
-          <h3>Projeto Três</h3>
-          <p>Uma breve descrição do projeto e das tecnologias utilizadas.</p>
-          <a href="#" class="project-link">Ver mais →</a>
+          <div class="project-head">
+            <span class="sheet-tag">Nº 2025-002</span>
+            <span class="status status-progress">Em andamento</span>
+          </div>
+          <h3>Passarela Rio Verde</h3>
+          <p>Passarela estaiada para pedestres, com projeto de fundações em terreno de baixa capacidade de carga.</p>
+          <dl class="project-meta">
+            <div><dt>Categoria</dt><dd>Infraestrutura</dd></div>
+            <div><dt>Ano</dt><dd>2025</dd></div>
+          </dl>
+        </article>
+        <article class="project-card">
+          <div class="project-head">
+            <span class="sheet-tag">Nº 2022-021</span>
+            <span class="status status-done">Concluído</span>
+          </div>
+          <h3>Reforço Estrutural Ed. Central</h3>
+          <p>Diagnóstico e reforço de pilares para adequação a novas cargas de uso comercial.</p>
+          <dl class="project-meta">
+            <div><dt>Categoria</dt><dd>Retrofit</dd></div>
+            <div><dt>Ano</dt><dd>2022</dd></div>
+          </dl>
         </article>
       </div>
     </section>
 
     <section id="contato" class="section fade-in">
-      <h2 class="section-title">Contato</h2>
-      <form id="contact-form" class="contact-form">
-        <label for="name">Nome</label>
-        <input type="text" id="name" name="name" required />
+      <p class="section-tag">04 — Contato</p>
+      <h2 class="section-title">Vamos conversar sobre o seu projeto</h2>
+      <div class="contact-grid">
+        <form id="contact-form" class="contact-form">
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="name" required />
 
-        <label for="email">E-mail</label>
-        <input type="email" id="email" name="email" required />
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required />
 
-        <label for="message">Mensagem</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
 
-        <button type="submit" class="btn btn-primary">Enviar</button>
-        <p id="form-status" class="form-status"></p>
-      </form>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+          <p id="form-status" class="form-status" role="status"></p>
+        </form>
+        <div class="contact-info">
+          <div>
+            <h3>Escritório</h3>
+            <p>Av. Engenheiro Prado, 450 — Sala 12<br />São Paulo, SP</p>
+          </div>
+          <div>
+            <h3>Contato direto</h3>
+            <p>(11) 4002-8922<br />contato@vetorengenharia.com.br</p>
+          </div>
+          <div>
+            <h3>Atendimento</h3>
+            <p>Segunda a sexta, 8h às 18h</p>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>&copy; <span id="year"></span> Seu Nome. Todos os direitos reservados.</p>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo">
+          <svg class="logo-mark" width="22" height="22" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M3 25 L25 25 L25 3 Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+            <line x1="3" y1="25" x2="25" y2="3" stroke="currentColor" stroke-width="2" />
+            <circle cx="19" cy="19" r="1.7" fill="currentColor" />
+          </svg>
+          <span>Vetor Engenharia</span>
+        </span>
+        <p>Vetor Engenharia LTDA — CREA-SP 123456/D</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#quem-somos">Quem Somos</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+    <p class="footer-copy">&copy; <span id="year"></span> Vetor Engenharia. Todos os direitos reservados.</p>
   </footer>
 
   <script src="script.js"></script>

@@ -32,7 +32,9 @@ document.querySelectorAll(".nav-links a").forEach((link) => {
   link.addEventListener("click", () => navLinks.classList.remove("open"));
 });
 
-const observer = new IntersectionObserver(
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+const sectionObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -43,13 +45,46 @@ const observer = new IntersectionObserver(
   { threshold: 0.15 }
 );
 
-document.querySelectorAll(".fade-in").forEach((el) => observer.observe(el));
+document.querySelectorAll(".fade-in").forEach((el) => sectionObserver.observe(el));
+
+function animateCount(el) {
+  const target = parseInt(el.dataset.count, 10);
+  if (reduceMotion || Number.isNaN(target)) {
+    el.textContent = target;
+    return;
+  }
+  const duration = 1200;
+  const start = performance.now();
+  function step(now) {
+    const progress = Math.min((now - start) / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    el.textContent = Math.round(eased * target);
+    if (progress < 1) {
+      requestAnimationFrame(step);
+    }
+  }
+  requestAnimationFrame(step);
+}
+
+const statObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        animateCount(entry.target);
+        statObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.4 }
+);
+
+document.querySelectorAll(".stat-number").forEach((el) => statObserver.observe(el));
 
 const form = document.getElementById("contact-form");
 const formStatus = document.getElementById("form-status");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  formStatus.textContent = "Mensagem enviada! Em breve entrarei em contato.";
+  formStatus.textContent = "Mensagem enviada! Em breve entraremos em contato.";
   form.reset();
 });

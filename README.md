@@ -1,12 +1,14 @@
-# Meu Site
+# Vetor Engenharia
 
-Site de portfólio simples, construído com HTML, CSS e JavaScript puros (sem frameworks).
+Site institucional para uma empresa de engenharia, construído com HTML, CSS e
+JavaScript puros (sem frameworks). Seções: Início, Quem Somos, Serviços,
+Portfólio de Projetos e Contato.
 
 ## Estrutura
 
-- `index.html` — estrutura da página (sobre, habilidades, projetos, contato)
-- `style.css` — estilos, tema claro/escuro e responsividade
-- `script.js` — alternância de tema, menu mobile, animações ao rolar e formulário de contato
+- `index.html` — estrutura da página (hero, quem somos, serviços, projetos, contato)
+- `style.css` — identidade visual "blueprint" (azul técnico + laranja de segurança), tema claro/escuro e responsividade
+- `script.js` — alternância de tema, menu mobile, animações ao rolar, contador animado nos números e formulário de contato
 
 ## Como usar
 
@@ -20,4 +22,4 @@ Depois acesse `http://localhost:8000`.
 
 ## Personalização
 
-Edite os textos em `index.html` (nome, descrição, projetos) para deixar o portfólio com o seu conteúdo.
+Edite os textos em `index.html` (nome da empresa, sobre, serviços, projetos, dados de contato) para deixar o site com o conteúdo real da empresa.
