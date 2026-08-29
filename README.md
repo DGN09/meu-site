@@ -24,11 +24,14 @@ Depois acesse `http://localhost:8000`.
 
 Edite os textos em `index.html` (nome da empresa, sobre, serviços, projetos, dados de contato) para deixar o site com o conteúdo real da empresa.
 
-## Domínio próprio
+## Domínio
 
-O arquivo `CNAME` define o domínio customizado (`borealisengenharia.com`) usado
-pelo GitHub Pages. Para o domínio funcionar, configure no registrador do
-domínio:
+O site está publicado no domínio padrão do GitHub Pages:
+https://dgn09.github.io/meu-site/
+
+Quando o domínio `borealisengenharia.com` estiver registrado, basta criar um
+arquivo `CNAME` na raiz do repositório com esse endereço e configurar no
+registrador do domínio:
 
 - Registros **A** apontando `borealisengenharia.com` para:
   - 185.199.108.153
