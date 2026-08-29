@@ -2,16 +2,20 @@ document.getElementById("year").textContent = new Date().getFullYear();
 
 const themeToggle = document.getElementById("theme-toggle");
 const root = document.documentElement;
-const savedTheme = localStorage.getItem("theme");
+const prefersDark = window.matchMedia("(prefers-color-scheme: dark)");
 
-if (savedTheme) {
-  root.setAttribute("data-theme", savedTheme);
-  themeToggle.textContent = savedTheme === "dark" ? "☀️" : "🌙";
+function currentTheme() {
+  return root.getAttribute("data-theme") || (prefersDark.matches ? "dark" : "light");
 }
 
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme) {
+  root.setAttribute("data-theme", savedTheme);
+}
+themeToggle.textContent = currentTheme() === "dark" ? "☀️" : "🌙";
+
 themeToggle.addEventListener("click", () => {
-  const isDark = root.getAttribute("data-theme") === "dark";
-  const next = isDark ? "light" : "dark";
+  const next = currentTheme() === "dark" ? "light" : "dark";
   root.setAttribute("data-theme", next);
   localStorage.setItem("theme", next);
   themeToggle.textContent = next === "dark" ? "☀️" : "🌙";
