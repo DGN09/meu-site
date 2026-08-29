@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu Portfólio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <a href="#" class="logo">Seu Nome</a>
+      <ul class="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-toggle" aria-label="Alternar tema">🌙</button>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menu">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Olá, eu sou <span class="highlight">Seu Nome</span></h1>
+        <p class="subtitle">Desenvolvedor(a) apaixonado(a) por criar experiências digitais simples e eficientes.</p>
+        <div class="hero-buttons">
+          <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+          <a href="#contato" class="btn btn-secondary">Fale Comigo</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section fade-in">
+      <h2 class="section-title">Sobre Mim</h2>
+      <div class="about-content">
+        <p>
+          Sou um(a) desenvolvedor(a) em constante aprendizado, com interesse em
+          construir projetos que resolvam problemas reais. Gosto de explorar novas
+          tecnologias e compartilhar conhecimento pelo caminho.
+        </p>
+      </div>
+    </section>
+
+    <section id="habilidades" class="section fade-in">
+      <h2 class="section-title">Habilidades</h2>
+      <div class="skills-grid">
+        <div class="skill-card">HTML5</div>
+        <div class="skill-card">CSS3</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Git &amp; GitHub</div>
+        <div class="skill-card">Responsividade</div>
+        <div class="skill-card">UI/UX</div>
+      </div>
+    </section>
+
+    <section id="projetos" class="section fade-in">
+      <h2 class="section-title">Projetos</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Projeto Um</h3>
+          <p>Uma breve descrição do projeto e das tecnologias utilizadas.</p>
+          <a href="#" class="project-link">Ver mais →</a>
+        </article>
+        <article class="project-card">
+          <h3>Projeto Dois</h3>
+          <p>Uma breve descrição do projeto e das tecnologias utilizadas.</p>
+          <a href="#" class="project-link">Ver mais →</a>
+        </article>
+        <article class="project-card">
+          <h3>Projeto Três</h3>
+          <p>Uma breve descrição do projeto e das tecnologias utilizadas.</p>
+          <a href="#" class="project-link">Ver mais →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contato" class="section fade-in">
+      <h2 class="section-title">Contato</h2>
+      <form id="contact-form" class="contact-form">
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Mensagem</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        <p id="form-status" class="form-status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Seu Nome. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
